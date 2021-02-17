@@ -22,6 +22,23 @@
 
 function fizzBuzz(n) {
   // Do your code here
+  var result = [];
+  for (let i = 0; i < n; i++) {
+    if (i == (3*n) || i == (5*n) || i == (3*n) && i == (5*n)) {
+      if(i == (3*n)){
+        result[i] = "fizz";
+      }
+      if(i == (5*n)){
+        result[i] = "buzz";
+      }
+      if(i == (3*n) && i == (5*n)){
+        result[i] = "fizzbuzz";
+      }
+    } else {
+      result[i] = "";
+    }
+  }
+  return result;
 }
 
 module.exports = fizzBuzz

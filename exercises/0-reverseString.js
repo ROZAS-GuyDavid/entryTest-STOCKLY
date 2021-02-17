@@ -17,7 +17,7 @@
  */
 
 function reverseString(str) {
-  // Do your code here
+    return str.split("").reverse().join("");
 }
 
 module.exports = reverseString

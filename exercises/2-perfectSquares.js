@@ -22,6 +22,23 @@
 
 function perfectSquares(lower, upper) {
   // Do your code here
+  result = [];
+  for (let i = lower; i < upper; i++) {
+    const isPerfectSquare = num => {
+        let ind = 1;
+        while(ind * ind <= num){
+            if(ind * ind !== num){
+              ind++;
+              continue;
+            };
+            return true;
+        };
+        return false;
+      };
+  };
+
+  
+
 }
 
 module.exports = perfectSquares
